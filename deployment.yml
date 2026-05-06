@@ -8,6 +8,11 @@ metadata:
     env: demo
 spec:
   replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+      type: frontend
+      env: demo
   template:
     metadata:
       labels:
