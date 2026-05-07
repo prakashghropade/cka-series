@@ -18,9 +18,9 @@ spec:
     nodeAffinity:
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 1
-        preferences:
-          - matchExpressions:
-            - key: disktype
-              operator: In
-              values:
-              - hdd
+        preference:
+          matchExpressions:
+          - key: disktype
+            operator: In
+            values:
+            - hdd
