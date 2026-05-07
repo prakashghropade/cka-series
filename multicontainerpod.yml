@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multicontainerpod
+  labels: 
+    env: demo
+    name: myapp-demo
+spec:
+  containers:
+  - name: myapp-container
+    image: busybox:1.28
+    env:
+    - name: FRISTNAME
+      value: "Prakash"
+      
+
