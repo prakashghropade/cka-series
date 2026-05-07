@@ -11,7 +11,6 @@ spec:
     targetPort: 80
     nodePort: 30001
   selector:
-    labels:
         app: nginx
         type: frontend
         env: demo
