@@ -19,7 +19,6 @@ spec:
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 1
         preferences:
-          nodeSelectorTerms:
           - matchExpressions:
             - key: disktype
               operator: In
