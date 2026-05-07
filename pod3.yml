@@ -8,8 +8,14 @@ metadata:
     type: apps
   namespace: default
 spec:
+  
   containers:
   - name: redis
     image: redis:latest
     ports:
     - containerPort: 6379 
+  tolerations:
+  - key: "gpu"
+    operator: "Equal"
+    value: "true"
+    effect: "NoSchedule"
